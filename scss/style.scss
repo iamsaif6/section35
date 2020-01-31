@@ -1,0 +1,128 @@
+.abosolute-bg-right{background: url('../red-yellow-and-blue-abstract-painting-3598435.jpg');}
+.abosolute-bg-left{background: url('../white-iphone-xr-3586249.jpg');}
+
+
+
+
+section {
+     background-color: #222931;
+     color: #fff;
+     padding: 75px 0;
+   }
+   h3 {
+     text-transform: uppercase;
+     font-weight: 600;
+   }
+   p {
+     color: #ddd;
+     margin: 25px 0;
+   }
+   .text-btn {
+     font-size: 13px;
+     text-transform: uppercase;
+     color: #fff;
+     display: inline-block;
+     font-weight: 700;
+     border: 0.5px solid;
+     padding: 7px 20px;
+     margin-bottom: 20px;
+   }
+   .text-box {
+     position: relative;
+     padding: 0 39px;
+   }
+   .text-box:before {
+     position: absolute;
+     height: 40%;
+     width: 1px;
+     background: #656A6F;
+     content: '';
+     top: 12px;
+     left: 0;
+   }
+
+   
+.relative-bg-right {
+     position: relative;
+   }
+   .abosolute-bg-right {
+     position: absolute;
+     width: 50%;
+     height: 100%;
+     top: 0;
+     right: 0;
+   }
+   .relative-bg-left {
+     position: relative;
+   }
+   .abosolute-bg-left {
+     position: absolute;
+     width: 50%;
+     height: 100%;
+     top: 0;
+     left: 0;
+   }
+
+   .relative-bg-left .text-box{
+        margin-left: 60px;
+   }
+   .abosolute-bg-right::after {
+     content: '';
+     background: 
+ #000;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ opacity: 0.6;}
+
+ .abosolute-bg-left::after {
+     content: '';
+     background: 
+ #000;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ opacity: 0.6;}
+
+
+ 
+.text-box:after {
+     width: 0;
+     height: 0;
+     border-top: 20px solid transparent;
+     border-left: 40px solid #222931;
+     border-bottom: 20px solid transparent;
+     top: 50%;
+     left: 100%;
+     position: absolute;
+     content: '';
+     transform: translate(0,-50%);
+   }
+
+
+   
+ 
+.relative-bg-left .text-box:after {
+     width: 0;
+
+     height: 0;
+     
+     // border-top: 21px solid
+     // transparent;
+     
+     // border-right: 40px solid
+     // #222931;
+     
+     // border-bottom: 20px solid
+     // transparent;
+     
+     top: 50%;
+     
+     left: -34%;
+     
+     position: absolute;
+     
+     content: '';
+     
+     transform: translate(0, -50%);
+   }
